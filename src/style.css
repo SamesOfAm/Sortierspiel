@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/barlow-v5-latin-500.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    src: url('/fonts/barlow-v5-latin-800.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/barlow-v5-latin-600.woff2') format('woff2')
+}
+
+html,
+body {
+    font-family: 'Barlow', sans-serif;
+    overflow: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+#layover {
+    width: 500px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#layover img {
+    width: 100%;
+}
+
+.layover-text {
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 155px;
+    transform: rotate(-2deg);
+    text-align: center;
+}
+
+.layover-text h2 {
+    font-family: 'Barlow';
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.layover-text .cta {
+    font-weight: bold;
+}
+
+.layover-button {
+    background: #ffb300;
+    padding: 6px 20px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.start-button {
+    position: absolute;
+    top: 230px;
+    left: 325px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c53131;
+    height: 100px;
+    width: 300px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.time {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.new-button {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+}
